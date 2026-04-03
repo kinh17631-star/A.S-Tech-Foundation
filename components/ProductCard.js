@@ -1,34 +1,20 @@
 export default function ProductCard({ product }) {
   return (
-    <div style={{
-      border: "1px solid #1e293b",
-      padding: "15px",
-      borderRadius: "10px",
-      width: "250px"
-    }}>
-      <img src={product.image} width="100%" />
+    <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-4 rounded-xl hover:scale-105 transition">
+      
+      <img src={product.image} className="rounded-lg" />
 
-      <h3>{product.name}</h3>
-      <p>{product.price}</p>
+      <h3 className="mt-3 text-lg font-semibold">{product.name}</h3>
+      <p className="text-blue-400">{product.price}</p>
 
-      <div style={{ display: "flex", gap: "10px" }}>
+      <div className="flex gap-2 mt-3">
         <a href={`/product/${product.id}`}>
-          <button style={{
-            padding: "8px 10px",
-            background: "#3b82f6",
-            color: "white",
-            border: "none"
-          }}>
+          <button className="px-3 py-1 bg-blue-500 rounded">
             View
           </button>
         </a>
 
-        <button style={{
-          padding: "8px 10px",
-          background: "#22c55e",
-          color: "white",
-          border: "none"
-        }}>
+        <button className="px-3 py-1 bg-green-500 rounded">
           Buy
         </button>
       </div>
