@@ -1,12 +1,7 @@
 export default function Footer() {
   return (
-    <footer style={{
-      padding: "20px",
-      textAlign: "center",
-      borderTop: "1px solid #1e293b",
-      marginTop: "40px"
-    }}>
-      <p>© 2026 A.S Tech Foundation</p>
+    <footer className="text-center py-6 border-t border-white/10 mt-10 text-gray-400">
+      © 2026 A.S Tech Foundation
     </footer>
   );
 }
