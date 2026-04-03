@@ -1,4 +1,22 @@
+"use client";
+
 export default function ProductCard({ product }) {
+
+  const handleWhatsApp = () => {
+    const phoneNumber = "918650921106"; // apna number daalo (without +)
+
+    const message = `Hello, I want to buy this website:
+
+Product: ${product.name}
+Price: ${product.price}
+
+Please provide more details.`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-4 rounded-xl hover:scale-105 transition">
       
@@ -14,8 +32,12 @@ export default function ProductCard({ product }) {
           </button>
         </a>
 
-        <button className="px-3 py-1 bg-green-500 rounded">
-          Buy
+        {/* WHATSAPP BUY BUTTON */}
+        <button 
+          onClick={handleWhatsApp}
+          className="px-3 py-1 bg-green-500 rounded"
+        >
+          Buy Now
         </button>
       </div>
     </div>
