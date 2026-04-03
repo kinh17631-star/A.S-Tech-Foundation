@@ -1,3 +1,5 @@
+import ProductCard from "../../components/ProductCard";
+
 const products = [
   {
     id: "ai-prompt-hub",
@@ -15,22 +17,12 @@ const products = [
 
 export default function Products() {
   return (
-    <main style={{ padding: "40px" }}>
-      <h1>All Websites</h1>
+    <main className="p-10">
+      <h1 className="text-3xl font-bold mb-6">All Websites</h1>
 
-      <div style={{ display: "flex", gap: "20px", marginTop: "20px" }}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {products.map((p) => (
-          <div key={p.id} style={{ border: "1px solid #1e293b", padding: "20px", borderRadius: "10px" }}>
-            <img src={p.image} width="200" />
-            <h3>{p.name}</h3>
-            <p>{p.price}</p>
-
-            <a href={`/product/${p.id}`}>
-              <button style={{ padding: "8px 15px", background: "#22c55e", border: "none", color: "white" }}>
-                View
-              </button>
-            </a>
-          </div>
+          <ProductCard key={p.id} product={p} />
         ))}
       </div>
     </main>
