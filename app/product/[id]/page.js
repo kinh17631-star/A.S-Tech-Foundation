@@ -14,15 +14,15 @@ const products = {
 export default function ProductPage({ params }) {
   const product = products[params.id];
 
-  if (!product) return <h1>Product not found</h1>;
+  if (!product) return <h1 className="p-10">Product not found</h1>;
 
   return (
-    <main style={{ padding: "40px" }}>
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <h3>{product.price}</h3>
+    <main className="p-10">
+      <h1 className="text-3xl font-bold">{product.name}</h1>
+      <p className="mt-2 text-gray-400">{product.description}</p>
+      <h3 className="mt-4 text-blue-400 text-xl">{product.price}</h3>
 
-      <button style={{ padding: "10px 20px", background: "#3b82f6", border: "none", color: "white" }}>
+      <button className="mt-6 px-6 py-3 bg-blue-500 rounded">
         Buy Now
       </button>
     </main>
