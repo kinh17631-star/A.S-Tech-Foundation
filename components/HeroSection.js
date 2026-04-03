@@ -1,26 +1,17 @@
 export default function HeroSection() {
   return (
-    <section style={{
-      textAlign: "center",
-      padding: "80px 20px"
-    }}>
-      <h1 style={{ fontSize: "42px" }}>
-        Buy Premium Ready-Made Websites
+    <section className="text-center py-24 px-6">
+      <h1 className="text-5xl font-bold">
+        Build Your Online Presence <br />
+        <span className="text-blue-400">With Premium Websites</span>
       </h1>
 
-      <p style={{ marginTop: "10px" }}>
-        High-quality websites for your business & projects
+      <p className="mt-4 text-gray-400">
+        Ready-made high-quality websites for creators & businesses
       </p>
 
       <a href="/products">
-        <button style={{
-          marginTop: "20px",
-          padding: "12px 25px",
-          background: "#3b82f6",
-          color: "white",
-          border: "none",
-          borderRadius: "5px"
-        }}>
+        <button className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg">
           Explore Websites
         </button>
       </a>
