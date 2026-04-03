@@ -5,7 +5,7 @@ const products = [
     id: "ai-prompt-hub",
     name: "AI Prompt Hub",
     price: "$29",
-    image: "https://via.placeholder.com/300"
+    image: "IMG_4219.jpeg"
   },
   {
     id: "portfolio-site",
