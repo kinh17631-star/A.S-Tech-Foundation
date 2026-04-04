@@ -11,13 +11,13 @@ const products = [
     id: "scan-dine",
     name: "ScanDine - Digital QR Menu",
     price: "$149", // High-value B2B SaaS for Restaurants
-    image: "/IMG_4220.png" // Screenshot lekar public folder me daal dena
+    image: "/" // Screenshot lekar public folder me daal dena
   },
   {
     id: "last-password",
     name: "LastPassword (Ad-Ready)",
     price: "$49", // Pre-monetized with Adsterra ads
-    image: "/lastpassword.png" // Screenshot lekar public folder me daal dena
+    image: "/IMG_4220.png" // Screenshot lekar public folder me daal dena
   },
   {
     id: "portfolio-site",
